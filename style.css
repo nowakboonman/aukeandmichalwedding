@@ -53,15 +53,32 @@ line-height: 160%; /* 28.8px */
 }
 
 @media (max-width: 768px) {
-    nav ul {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    nav{
+        display: none;
     }
 
-    nav li {
-        display: inline-block;
-        margin: 0 10px;
+    .our-story{
+        flex-direction: column;
+        row-gap: 36px;
+    }
+    
+
+    .venue{
+        flex-direction: column;
+        row-gap: 36px;
+    }
+
+    .venue-image{
+        width: 80dvw;
+    }
+
+    .places-to-stay{
+        flex-direction: column;
+        row-gap: 36px;
+    }
+
+    h1{
+        font-size: 36px;
     }
 }
 
@@ -197,6 +214,7 @@ button{
     justify-content: center;
     align-items: center;
     row-gap: 16px;
+    margin-top: 80px;
 }
 
 .hero-image {
@@ -351,6 +369,6 @@ footer {
 }
 
 .logo {
-    width: 106px;
+    width: 60px;
     height: auto;
 }
