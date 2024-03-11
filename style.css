@@ -112,6 +112,47 @@ header.sticky {
     margin: 0;
 }
 
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 36px;
+    
+}
+
+.form-group{
+    padding-bottom: 10px;
+}
+
+.button.wide{
+    width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
 .top-bar nav ul {
     list-style: none;
     margin: 0;
@@ -316,6 +357,9 @@ button{
     padding: 6px 22px;
 }
 
+.rsvp-button.mobile-rsvp {
+    display: none;
+}
 
 footer {
     background-color: #f3e9db;
@@ -407,5 +451,8 @@ footer {
         max-height: 100%;
         height: 100%;
         justify-content: flex-start;
+    }
+    .rsvp-button.mobile-rsvp {
+        display: block;
     }
 }

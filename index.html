@@ -34,7 +34,7 @@
                     </li>
                     <li><a href="#section4">Itinerary</a></li>
                     <li><a href="wishlist.html">Wishlist</a></li>
-                    <li><a class="rsvp-button" href="#section5">RSVP</a></li>
+                    <button class="rsvp-button" id="openPopupBtn">RSVP</button>
                 </ul>
             </nav>
         </div>
@@ -43,11 +43,42 @@
     <div class="section" id="section1">
         <div class="hero-header">
             <h1>Auke & Michal</h1>
-            <h6>May 26, 2024 - The Netherlands</h6>
+            <h6>May 26, 2024</h6>
         </div>
-
+        <button class="rsvp-button mobile-rsvp" id="openPopupBtn-m">RSVP</button>
         <div class="hero-image-container">
             <img class="hero-image" src="./resources/images/Placeholder.png" alt="Image Placeholder">
+        </div>
+    </div>
+
+
+    <div id="popupContainer" class="popup-container">
+        <div class="popup-content">
+            <span class="close-btn" id="closePopupBtn">&times;</span>
+            <h3>RSVP Form</h3>
+            <form id="rsvpForm">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label>Are you attending?</label>
+                    <div class="radio-group">
+                        <input type="radio" id="attendingYes" name="attending" value="Yes" required>
+                        <label for="attendingYes">Yes</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="attendingNo" name="attending" value="No">
+                        <label for="attendingNo">No</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="dietaryNeeds">Dietary Needs or Allergies:</label>
+                    <input type="text" id="dietaryNeeds" name="dietaryNeeds">
+                </div>
+                <button class="button wide" id="submitBtn" type="submit">Submit</button>
+            </form>
+            <div id="spinner" style="display: none;">Submitting...</div>
         </div>
     </div>
 
@@ -175,7 +206,8 @@ can finally take place in May 2024.
             </nav>
         </div>
     </footer>
-
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="./script.js"></script>
 </body>
 
 </html>
