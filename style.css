@@ -25,6 +25,10 @@ h1 {
     /* 101px */
 }
 
+h3{
+    font-size: 36px;
+}
+
 
 h2{
 font-family: Fondamento;
@@ -98,6 +102,25 @@ header.sticky {
     position: sticky;
     top: 0;
     z-index: 100;
+}
+
+hr{
+    width: 80%;
+}
+
+.place-link{
+    text-decoration: none;
+    font-size: 28px;
+    border: 1px solid #334018;
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.place-link:visited{
+    color:#334018
 }
 
 .top-bar {
@@ -296,8 +319,12 @@ button{
     background-color: #F3E9DB;
     width: 100dvw;
     transition: all 0.6s ease-in;
+    padding-bottom: 76px;
 }
 
+.places-header{
+    padding: 26px;
+}
 .places-to-stay{
     display: flex;
     justify-content: center;
@@ -326,6 +353,9 @@ button{
 .itinerary{
     display: flex;
     flex-direction: column;
+    width: 20dvw;
+    justify-content: center;
+    align-items: center;
 }
 
 .itinerary-header{
@@ -336,17 +366,6 @@ button{
     row-gap: 34px;
 }
 
-.itinerary-content{
-    display: flex;
-}
-
-.itinerary-content-left{
-    flex: 1;
-}
-
-.itinerary-content-right{
-    flex: 2;
-}
 
 .itinerary-date{
     text-decoration: underline;
@@ -381,6 +400,26 @@ footer {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
+}
+
+.itinerary-list{
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    width: 100%;
+}
+
+.itinerary-item{
+    display: flex;
+}
+
+.time{
+    flex: 1;
+}
+
+.event{
+    flex: 2;
 }
 
 .logo {
@@ -418,6 +457,10 @@ footer {
 
     h1{
         font-size: 36px;
+    }
+
+    .itinerary{
+        width: 60dvw;
     }
 
     .hero-header{
