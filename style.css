@@ -111,6 +111,7 @@ hr{
 .place-link{
     text-decoration: none;
     font-size: 28px;
+    color: #334018;
     border: 1px solid #334018;
     width: fit-content;
     padding-left: 20px;
